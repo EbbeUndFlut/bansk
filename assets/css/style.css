@@ -1,18 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* 
 Pallete 1
-#ebe8e9 #9c7b8a #d6ced1 #ebe1e5 #c9065e
+#ebe8e9 #9c7b8a #d6ced1 #ebe1e5 #c9065e#ebe8e9
  */
 
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
 }
 
+.assasine {
+	visibility: hidden;
+}
+::-webkit-scrollbar {
+	display: none;
+	width: 0;
+	height: 0; /* for Chrome, Safari, and Opera */
+}
 body {
-	background: #ebe1e5 url("../img/girl.png") no-repeat fixed left bottom;
+	background: #ebe1e5 url("../img/girl.png") no-repeat fixed left
+		bottom;
 	background-size: 10%;
 }
 
@@ -77,7 +87,7 @@ section:nth-of-type(3) {
 }
 .rahmen {
 	height: 95%;
-	margin-top: 10%;
+	/* margin-top: 10%; */
 }
 
 .contentWrap {
@@ -92,21 +102,63 @@ section:nth-of-type(3) {
 	padding: 0 80px;
 	background: rgba(235, 232, 233, 0);
 	height: 65%;
-	scrollbar-width: none; /* Firefox */
+	scrollbar-width: 0; /* Firefox */
 	-ms-overflow-style: none; /* IE 10+ */
-	overflow-y: scroll;
+	overflow-y: auto;
 	overflow-x: hidden;
-    transform:rotate(180deg);
+	transform: rotate(180deg);
 }
 
-.contentWrap h2, .contentWrap p{
-    transform:rotate(-180deg);
-}
-.content::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+.contentWrap h2,
+.contentWrap p {
+	transform: rotate(-180deg);
+	color: #9c7b8a;
 }
 
+.contentWrap h2 {
+	color: #c9065e;
+	margin: 10px 0;
+	text-align: left;
+}
 
+.contentWrap p {
+	text-align: justify;
+	margin-bottom: 20px;
+	line-height: 28px;
+}
+/* ##### LASTSECTION ###### */
+
+section:nth-of-type(4) {
+	background: linear-gradient(
+		to bottom,
+		rgba(235, 225, 229, 0),
+		rgb(235, 225, 229, 1)
+	);
+}
+.galary {
+	width: 85%;
+	margin: 20px auto 0 auto;
+}
+
+.rondell{
+    height:800px;
+    width: 33%;
+    box-shadow: 0 0 3px #ebe8e9;
+    display: inline-block;
+}
+
+.rondell:hover{
+    filter:blur(3px)
+}
+.bg-a{
+    background: url('../img/banksy.jpg') no-repeat center/cover;
+}
+.bg-b{
+    background: url('../img/banksy2.jpg') no-repeat center/cover;
+}
+.bg-c{
+    background: url('../img/banksy3.jpg') no-repeat center/cover;
+}
 /* ######## ANIMATIONS ######## */
 @keyframes fadein {
 	0% {
