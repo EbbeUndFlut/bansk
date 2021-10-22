@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* 
+Pallete 1
+#ebe8e9 #9c7b8a #d6ced1 #ebe1e5 #c9065e
+ */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ebe1e5 url("../img/girl.png") no-repeat fixed left bottom;
+	background-size: 10%;
+}
+
+section {
+	height: 100vh;
+}
+section:nth-of-type(1) {
+	background: url("../img/ballon.png") no-repeat 10% center;
+	background-size: 10%;
+	padding-top: 20%;
+}
+
+.headSection {
+	color: #d6ced1;
+	font-size: 78px;
+	font-family: "Playfair Display", serif;
+	text-align: center;
+	animation: fadein 2s linear 4s 1;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+/* ######### Nav ######### */
+
+nav {
+	position: sticky;
+	top: 0;
+}
+
+.logo {
+	font-size: 25px;
+	color: #c9065e;
+	padding: 10px 15px;
+}
+
+/* ##### NEWSLETTERSECTION ##### */
+form {
+	text-align: center;
+	padding-top: 20%;
+}
+form input {
+	border: none;
+	font-size: 20px;
+	padding: 15px 5px;
+	background: #ebe8e9;
+	display: inline-block;
+	width: 20%;
+}
+form button {
+	font-size: 20px;
+	background: #ebe8e9;
+	border: none;
+	padding: 15px 10px;
+	margin-left: -5px;
+	color: #c9065e;
+	cursor: pointer;
+}
+
+/* ##### RAHMEN SECTION ####### */
+section:nth-of-type(3) {
+	text-align: center;
+}
+.rahmen {
+	height: 95%;
+	margin-top: 10%;
+}
+
+.contentWrap {
+	width: 30%;
+
+	font-size: 18px;
+	position: relative;
+	top: -80%;
+	left: 35%;
+	transform: translate(-50%, 0);
+	/* z-index: -1; */
+	padding: 0 80px;
+	background: rgba(235, 232, 233, 0);
+	height: 65%;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE 10+ */
+	overflow-y: scroll;
+	overflow-x: hidden;
+    transform:rotate(180deg);
+}
+
+.contentWrap h2, .contentWrap p{
+    transform:rotate(-180deg);
+}
+.content::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+
+/* ######## ANIMATIONS ######## */
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
