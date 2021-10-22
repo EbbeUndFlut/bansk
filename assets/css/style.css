@@ -138,15 +138,24 @@ section:nth-of-type(4) {
 .galary {
 	width: 85%;
 	margin: 20px auto 0 auto;
+    text-align:center;
 }
 
 .rondell{
     height:800px;
-    width: 33%;
+    width: 25%;
     box-shadow: 0 0 3px #ebe8e9;
     display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
 }
 
+.rondell p{
+    text-align: left;
+    color:#c9065e;
+    font-size: 28px;
+    
+}
 .rondell:hover{
     filter:blur(3px)
 }
